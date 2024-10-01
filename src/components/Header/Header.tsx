@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   return (
     <header className="header-wrapper">
       <Container fluid className="p-0"> 
-        <Navbar expand="lg" className="header-content">
+        <Navbar expand="lg" className="header-content fixed-top">
           <Navbar.Brand href="#home" className="fw-bold text-white gym-logo">
             <AnimatedSection animation="fade-in">
             Fitness Center<span style={{ color: 'red' }}>.</span>
@@ -55,7 +55,6 @@ const Header: React.FC = () => {
               src={Carousel1}
               alt="Primeira Imagem"
             />
-
             <Carousel.Caption className="carousel-caption-custom">
             <AnimatedSection animation="fade-in">
               <h2 className="h2-carousel">Construa Seu</h2>
@@ -69,10 +68,8 @@ const Header: React.FC = () => {
             <AnimatedSection animation="fade-in">
               <a href="#action1" className="btn btn-primary">Junte-se a nós</a>
             </AnimatedSection>
-
             </Carousel.Caption>
           </Carousel.Item>
-
           <Carousel.Item className="carousel-item-custom">
             <img
               className="d-block w-100"
@@ -86,7 +83,6 @@ const Header: React.FC = () => {
               <a href="#action2" className="btn btn-primary">Junte-se a nós</a>
             </Carousel.Caption>
           </Carousel.Item>
-
           <Carousel.Item className="carousel-item-custom">
             <img
               className="d-block w-100"

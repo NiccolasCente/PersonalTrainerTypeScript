@@ -1,0 +1,25 @@
+.container-fluid, .row, .col {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card-overlay {
+    border: none; 
+    margin: 0;
+    overflow: hidden; 
+    border-radius: 0;
+  }
+  
+  .img-bg {
+    object-fit: cover; 
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease-in-out; 
+    border-radius: 0;
+    filter: brightness(0.5);
+  }
+  
+  .card-overlay:hover .img-bg {
+    transform: scale(1.05); 
+  }
+  
